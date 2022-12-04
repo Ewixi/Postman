@@ -266,34 +266,6 @@
 				"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies/AMS/accounts"
 			},
 			"response": []
-		},
-		{
-			"name": "Post BILLS",
-			"id": "216859d8-e9ee-4e2a-99b7-4f98f25d3e5e",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6IjExNDliZTEyZTIzN2QzNTlkYTE3ZTI1YWU2ZWMwMmVkMmFjYTk4MTZhMzdhZTlmZWRmZmVkMTk0ZmM5MWM3MGNiZTM1ODlhODU3ZjZkYTJlIiwiaWF0IjoxNjY5NTU1NzIyLjY1ODI3MSwibmJmIjoxNjY5NTU1NzIyLjY1ODI3NSwiZXhwIjoxNzAxMDkxNzIyLjY0ODM1NSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.j0Id9SF9gVN8r2YeQ6sAhhqeBuaXg6BIiMwMO9FK3-jdHTAcuJQ7uCTDPi9Na8iupac4uOjR0tu-MlsCIyXqfWD2rU0d3EySaG4rA35VJ0g2lHqrcrwW5GL5CFWDFZv-_U3IX-3LBuGs0nNqiij_9n5zP2OoHnLCKZ0uIjwZvj9-AUzDoGx-4zNOvQpv7RMjvvxfgLWIkzhokrXMBxgScA6vAswwlCThF5JbfTXeKftfQhF2mphKfaOY2TY8GdnO3_gsjRzqY3Cy1CfvvikpIwyK9tuuSTQh70jVkgZr-aoRw6yvO4u45jZLDzl0cbQcLFUAxzc42DTFd9K3EazDKRHUwtj6VctSyLV34WNgM2Hcylcg_pWyul2cDFR1j2Mqan3ekTk3dohgYRFdODh56fOBMD3SSHv0fEzQ-jrWjTdLG4eJoAXRCCTBK2gvMg88fXsckmoj6ETvE5-FO0W1AA4uCeoeVrTRoc-coLGr9qGIfoLvgs6zPB_JpeGVn7Jfv9yraMTR9Vyq4ae8IyHqElVtyPwEU4XxKiOlu74JtJKt-P4cDMt61pS42nPcKQDJU0VRPjNoJ4pCoJO8M-ZtSKBWs3byYeKtIBNIxNykZSG07jpy0cLZvfrXZqW4sL8-hi7mhNpjo8zrc1tmVMmNdU9_D1QmvtQ5fZF93rbUYO8"
-					}
-				},
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\"currency_id\": \"5\",\r\n\"currency_code\": \"EUR\",\r\n\"name\": \"Rent\",\r\n\"amount_min\": \"123.45\",\r\n\"amount_max\": \"123.45\",\r\n\"date\": \"2018-09-17T12:46:47+01:00\",\r\n\"end_date\": \"2018-09-17T12:46:47+01:00\",\r\n\"extension_date\": \"2018-09-17T12:46:47+01:00\",\r\n\"repeat_freq\": \"monthly\",\r\n\"skip\": 0,\r\n\"active\": true,\r\n\"notes\": \"Some example notes\",\r\n\"object_group_id\": \"5\",\r\n\"object_group_title\": \"Example Group\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "https://fintech-testlab.coderslab.pl/api/v1/bills"
-			},
-			"response": []
 		}
 	]
 }
