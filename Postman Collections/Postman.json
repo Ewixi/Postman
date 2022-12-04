@@ -344,7 +344,7 @@
 			"name": "Budgets",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Post a budget",
 					"id": "c15b836c-c55b-4b44-9ce2-baaf7ed19225",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
