@@ -101,6 +101,73 @@
 						"url": "https://fintech-testlab.coderslab.pl/api/v1/bills"
 					},
 					"response": []
+				},
+				{
+					"name": "Get a single bill",
+					"id": "767e6c66-9821-4219-bdd0-b350b0969185",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6ImViMjU2N2JiNmUyZWQzMGJhZDgyN2RmYzdmYTNhYjY1OTFlODQ1MjMyNGE1NmM1NmEzYzFlMTdhMzgyZmEyNDM0Njg4ZTg4MzJjYjdlYzRkIiwiaWF0IjoxNjY5NTU5NjY5LjMwNTM1MywibmJmIjoxNjY5NTU5NjY5LjMwNTM1OCwiZXhwIjoxNzAxMDk1NjY5LjI5MzAxMSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.bBLJt10oYm-CdKbojbBDAftVetBqudMQAmdbolO4YtUs9ztTQx5cQsZw8QgvPRQ2oVvPUgVJxvzrSf47yDX0GYTUz1jGyvtnJbn_pMhUKkU2hlHxv1RtGZpkLCP69OYt58RXopenYwZT-PuaNy_DqK4bNs3tviVnbTHTLfZgZgw8mGiCjXkvyOvYZfIVPZRdNZwctSklgauT83wNhba6ZKbKqEhhbRjvxfdGY7gQGejP-FO7jKUfnCMr79p8_vJrYzhIB5tKqtl3Sgr5XL4YpwLPqfwT0d5llEPnDSF_-MtHA8uMWkYKvjMCnVGtzrsE0LnMZxaxiaFi2SIy2Q5MdOWTU5zoEmcBaR7s9tghNLAnNhKcQFpOoMohYdpgEg8VMKNqmXPEmow-xjla_E1hijvbPQMgh_oQMW1o-4CRbPyIVScA0IApj3--LxJSaAm-y10NZzrMwiqe31FoAyC_zQ12wspAowmUnMYwevwGWx69xcfetuo6ZfbQlVuxIiwSf7q-ntQDjNr1MJ93IweDt_l1u2VYB_VCuH_HE43_ba_TonR7RXL8mSNVjH_eWna7t7Rn42_xDkyMUbZHUcvWFDZSp1j4Oikv9x6-1MltJRdmfb208LH9ma1cS-rq7QH63V1rRh8MZ2b1BP5tOA3msfwxGn4vuSWuXRgPgX0sGr8"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Postman-Token",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Name",
+									"value": "ewi",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Currency",
+									"value": "eur",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Minimum amount",
+									"value": "1",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Maximum amount",
+									"value": "10",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Date",
+									"value": "2022-11-27",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Repeats",
+									"value": "Monthly",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": "https://fintech-testlab.coderslab.pl/api/v1/bills/420",
+						"description": "Bill \"ewa\", id number:420"
+					},
+					"response": []
 				}
 			],
 			"id": "96b1b998-a04f-4568-9d1b-d772d0383687"
@@ -274,6 +341,11 @@
 			"id": "6d33dbfb-38dd-4fb5-b0c8-09f3f196f3ab"
 		},
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "baf97ffa-af99-4e83-bae0-a1d5f1b17c4a"
+		},
+		{
 			"name": "Get all accounts with AMS",
 			"id": "af7babfe-1607-4038-806a-58feda74335d",
 			"protocolProfileBehavior": {
@@ -304,73 +376,6 @@
 					}
 				},
 				"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies/AMS/accounts"
-			},
-			"response": []
-		},
-		{
-			"name": "Get a single bill",
-			"id": "767e6c66-9821-4219-bdd0-b350b0969185",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6ImViMjU2N2JiNmUyZWQzMGJhZDgyN2RmYzdmYTNhYjY1OTFlODQ1MjMyNGE1NmM1NmEzYzFlMTdhMzgyZmEyNDM0Njg4ZTg4MzJjYjdlYzRkIiwiaWF0IjoxNjY5NTU5NjY5LjMwNTM1MywibmJmIjoxNjY5NTU5NjY5LjMwNTM1OCwiZXhwIjoxNzAxMDk1NjY5LjI5MzAxMSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.bBLJt10oYm-CdKbojbBDAftVetBqudMQAmdbolO4YtUs9ztTQx5cQsZw8QgvPRQ2oVvPUgVJxvzrSf47yDX0GYTUz1jGyvtnJbn_pMhUKkU2hlHxv1RtGZpkLCP69OYt58RXopenYwZT-PuaNy_DqK4bNs3tviVnbTHTLfZgZgw8mGiCjXkvyOvYZfIVPZRdNZwctSklgauT83wNhba6ZKbKqEhhbRjvxfdGY7gQGejP-FO7jKUfnCMr79p8_vJrYzhIB5tKqtl3Sgr5XL4YpwLPqfwT0d5llEPnDSF_-MtHA8uMWkYKvjMCnVGtzrsE0LnMZxaxiaFi2SIy2Q5MdOWTU5zoEmcBaR7s9tghNLAnNhKcQFpOoMohYdpgEg8VMKNqmXPEmow-xjla_E1hijvbPQMgh_oQMW1o-4CRbPyIVScA0IApj3--LxJSaAm-y10NZzrMwiqe31FoAyC_zQ12wspAowmUnMYwevwGWx69xcfetuo6ZfbQlVuxIiwSf7q-ntQDjNr1MJ93IweDt_l1u2VYB_VCuH_HE43_ba_TonR7RXL8mSNVjH_eWna7t7Rn42_xDkyMUbZHUcvWFDZSp1j4Oikv9x6-1MltJRdmfb208LH9ma1cS-rq7QH63V1rRh8MZ2b1BP5tOA3msfwxGn4vuSWuXRgPgX0sGr8"
-					}
-				},
-				"method": "GET",
-				"header": [
-					{
-						"key": "Postman-Token",
-						"value": "",
-						"type": "default"
-					}
-				],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "Name",
-							"value": "ewi",
-							"type": "default",
-							"disabled": true
-						},
-						{
-							"key": "Currency",
-							"value": "eur",
-							"type": "default",
-							"disabled": true
-						},
-						{
-							"key": "Minimum amount",
-							"value": "1",
-							"type": "default",
-							"disabled": true
-						},
-						{
-							"key": "Maximum amount",
-							"value": "10",
-							"type": "default",
-							"disabled": true
-						},
-						{
-							"key": "Date",
-							"value": "2022-11-27",
-							"type": "default",
-							"disabled": true
-						},
-						{
-							"key": "Repeats",
-							"value": "Monthly",
-							"type": "default",
-							"disabled": true
-						}
-					]
-				},
-				"url": "https://fintech-testlab.coderslab.pl/api/v1/bills/420",
-				"description": "Bill \"ewa\", id number:420"
 			},
 			"response": []
 		}
