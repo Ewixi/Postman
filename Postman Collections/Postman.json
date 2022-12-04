@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "Post BILLS",
-			"_postman_id": "e9104787-256e-49ef-b973-7a0dc6ef4024",
+			"id": "e9104787-256e-49ef-b973-7a0dc6ef4024",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -35,7 +35,7 @@
 		},
 		{
 			"name": "Get Currencies",
-			"_postman_id": "2736c213-86f0-41b7-b62b-504761b5c058",
+			"id": "2736c213-86f0-41b7-b62b-504761b5c058",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -93,10 +93,7 @@
 							"type": "default",
 							"disabled": true
 						}
-					],
-					"options": {
-						"formdata": {}
-					}
+					]
 				},
 				"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies"
 			},
@@ -104,7 +101,7 @@
 		},
 		{
 			"name": "Get Bills",
-			"_postman_id": "dbf11f08-8842-466f-9be3-862fa2ce421c",
+			"id": "dbf11f08-8842-466f-9be3-862fa2ce421c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -162,10 +159,7 @@
 							"type": "default",
 							"disabled": true
 						}
-					],
-					"options": {
-						"formdata": {}
-					}
+					]
 				},
 				"url": "https://fintech-testlab.coderslab.pl/api/v1/bills"
 			},
@@ -173,7 +167,7 @@
 		},
 		{
 			"name": "Put AMS Currency",
-			"_postman_id": "14ec3384-d19e-4fe7-a41f-9605ce0b158e",
+			"id": "14ec3384-d19e-4fe7-a41f-9605ce0b158e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -207,7 +201,7 @@
 		},
 		{
 			"name": "Delete AMS Currency",
-			"_postman_id": "340a2b6d-8d6c-4122-bc85-2af72cef6cd4",
+			"id": "340a2b6d-8d6c-4122-bc85-2af72cef6cd4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -241,7 +235,7 @@
 		},
 		{
 			"name": "Get all accounts with AMS",
-			"_postman_id": "af7babfe-1607-4038-806a-58feda74335d",
+			"id": "af7babfe-1607-4038-806a-58feda74335d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -275,7 +269,7 @@
 		},
 		{
 			"name": "Get BILLS 2",
-			"_postman_id": "dab78cce-38c9-458b-9e3d-bb4c52a4d843",
+			"id": "dab78cce-38c9-458b-9e3d-bb4c52a4d843",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -303,7 +297,7 @@
 		},
 		{
 			"name": "Get BILLS 3",
-			"_postman_id": "65c9c1bd-9d56-4994-9af7-72921796d987",
+			"id": "65c9c1bd-9d56-4994-9af7-72921796d987",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -331,7 +325,7 @@
 		},
 		{
 			"name": "Post BILLS",
-			"_postman_id": "4a5f9f38-c05a-48a3-a7b6-6f99f8b861ce",
+			"id": "4a5f9f38-c05a-48a3-a7b6-6f99f8b861ce",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -343,6 +337,34 @@
 					}
 				},
 				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"currency_id\": \"5\",\r\n\"currency_code\": \"EUR\",\r\n\"name\": \"Rent\",\r\n\"amount_min\": \"123.45\",\r\n\"amount_max\": \"123.45\",\r\n\"date\": \"2018-09-17T12:46:47+01:00\",\r\n\"end_date\": \"2018-09-17T12:46:47+01:00\",\r\n\"extension_date\": \"2018-09-17T12:46:47+01:00\",\r\n\"repeat_freq\": \"monthly\",\r\n\"skip\": 0,\r\n\"active\": true,\r\n\"notes\": \"Some example notes\",\r\n\"object_group_id\": \"5\",\r\n\"object_group_title\": \"Example Group\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://fintech-testlab.coderslab.pl/api/v1/bills"
+			},
+			"response": []
+		},
+		{
+			"name": "Post BILLS",
+			"id": "216859d8-e9ee-4e2a-99b7-4f98f25d3e5e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6IjExNDliZTEyZTIzN2QzNTlkYTE3ZTI1YWU2ZWMwMmVkMmFjYTk4MTZhMzdhZTlmZWRmZmVkMTk0ZmM5MWM3MGNiZTM1ODlhODU3ZjZkYTJlIiwiaWF0IjoxNjY5NTU1NzIyLjY1ODI3MSwibmJmIjoxNjY5NTU1NzIyLjY1ODI3NSwiZXhwIjoxNzAxMDkxNzIyLjY0ODM1NSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.j0Id9SF9gVN8r2YeQ6sAhhqeBuaXg6BIiMwMO9FK3-jdHTAcuJQ7uCTDPi9Na8iupac4uOjR0tu-MlsCIyXqfWD2rU0d3EySaG4rA35VJ0g2lHqrcrwW5GL5CFWDFZv-_U3IX-3LBuGs0nNqiij_9n5zP2OoHnLCKZ0uIjwZvj9-AUzDoGx-4zNOvQpv7RMjvvxfgLWIkzhokrXMBxgScA6vAswwlCThF5JbfTXeKftfQhF2mphKfaOY2TY8GdnO3_gsjRzqY3Cy1CfvvikpIwyK9tuuSTQh70jVkgZr-aoRw6yvO4u45jZLDzl0cbQcLFUAxzc42DTFd9K3EazDKRHUwtj6VctSyLV34WNgM2Hcylcg_pWyul2cDFR1j2Mqan3ekTk3dohgYRFdODh56fOBMD3SSHv0fEzQ-jrWjTdLG4eJoAXRCCTBK2gvMg88fXsckmoj6ETvE5-FO0W1AA4uCeoeVrTRoc-coLGr9qGIfoLvgs6zPB_JpeGVn7Jfv9yraMTR9Vyq4ae8IyHqElVtyPwEU4XxKiOlu74JtJKt-P4cDMt61pS42nPcKQDJU0VRPjNoJ4pCoJO8M-ZtSKBWs3byYeKtIBNIxNykZSG07jpy0cLZvfrXZqW4sL8-hi7mhNpjo8zrc1tmVMmNdU9_D1QmvtQ5fZF93rbUYO8"
+					}
+				},
+				"method": "GET",
 				"header": [],
 				"body": {
 					"mode": "raw",
