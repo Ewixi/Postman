@@ -6,6 +6,11 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "96b1b998-a04f-4568-9d1b-d772d0383687"
+		},
+		{
 			"name": "Post BILLS",
 			"id": "e9104787-256e-49ef-b973-7a0dc6ef4024",
 			"protocolProfileBehavior": {
