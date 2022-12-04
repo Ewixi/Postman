@@ -342,7 +342,20 @@
 		},
 		{
 			"name": "Budgets",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "c15b836c-c55b-4b44-9ce2-baaf7ed19225",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "baf97ffa-af99-4e83-bae0-a1d5f1b17c4a"
 		},
 		{
