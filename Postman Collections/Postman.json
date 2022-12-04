@@ -107,13 +107,7 @@
 		},
 		{
 			"name": "New Folder",
-			"item": [
-				{
-					"name": "New Folder",
-					"item": [],
-					"id": "7bb2f108-ec4a-4d98-8e37-5187c1f9ce70"
-				}
-			],
+			"item": [],
 			"id": "6d33dbfb-38dd-4fb5-b0c8-09f3f196f3ab"
 		},
 		{
