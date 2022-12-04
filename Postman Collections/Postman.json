@@ -107,12 +107,209 @@
 		},
 		{
 			"name": "Currencies",
-			"item": [],
+			"item": [
+				{
+					"name": "Get Currencies",
+					"id": "2736c213-86f0-41b7-b62b-504761b5c058",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6ImViMjU2N2JiNmUyZWQzMGJhZDgyN2RmYzdmYTNhYjY1OTFlODQ1MjMyNGE1NmM1NmEzYzFlMTdhMzgyZmEyNDM0Njg4ZTg4MzJjYjdlYzRkIiwiaWF0IjoxNjY5NTU5NjY5LjMwNTM1MywibmJmIjoxNjY5NTU5NjY5LjMwNTM1OCwiZXhwIjoxNzAxMDk1NjY5LjI5MzAxMSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.bBLJt10oYm-CdKbojbBDAftVetBqudMQAmdbolO4YtUs9ztTQx5cQsZw8QgvPRQ2oVvPUgVJxvzrSf47yDX0GYTUz1jGyvtnJbn_pMhUKkU2hlHxv1RtGZpkLCP69OYt58RXopenYwZT-PuaNy_DqK4bNs3tviVnbTHTLfZgZgw8mGiCjXkvyOvYZfIVPZRdNZwctSklgauT83wNhba6ZKbKqEhhbRjvxfdGY7gQGejP-FO7jKUfnCMr79p8_vJrYzhIB5tKqtl3Sgr5XL4YpwLPqfwT0d5llEPnDSF_-MtHA8uMWkYKvjMCnVGtzrsE0LnMZxaxiaFi2SIy2Q5MdOWTU5zoEmcBaR7s9tghNLAnNhKcQFpOoMohYdpgEg8VMKNqmXPEmow-xjla_E1hijvbPQMgh_oQMW1o-4CRbPyIVScA0IApj3--LxJSaAm-y10NZzrMwiqe31FoAyC_zQ12wspAowmUnMYwevwGWx69xcfetuo6ZfbQlVuxIiwSf7q-ntQDjNr1MJ93IweDt_l1u2VYB_VCuH_HE43_ba_TonR7RXL8mSNVjH_eWna7t7Rn42_xDkyMUbZHUcvWFDZSp1j4Oikv9x6-1MltJRdmfb208LH9ma1cS-rq7QH63V1rRh8MZ2b1BP5tOA3msfwxGn4vuSWuXRgPgX0sGr8"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Postman-Token",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Name",
+									"value": "ewi",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Currency",
+									"value": "eur",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Minimum amount",
+									"value": "1",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Maximum amount",
+									"value": "10",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Date",
+									"value": "2022-11-27",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "Repeats",
+									"value": "Monthly",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies"
+					},
+					"response": []
+				},
+				{
+					"name": "Put AMS Currency",
+					"id": "14ec3384-d19e-4fe7-a41f-9605ce0b158e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6ImViMjU2N2JiNmUyZWQzMGJhZDgyN2RmYzdmYTNhYjY1OTFlODQ1MjMyNGE1NmM1NmEzYzFlMTdhMzgyZmEyNDM0Njg4ZTg4MzJjYjdlYzRkIiwiaWF0IjoxNjY5NTU5NjY5LjMwNTM1MywibmJmIjoxNjY5NTU5NjY5LjMwNTM1OCwiZXhwIjoxNzAxMDk1NjY5LjI5MzAxMSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.bBLJt10oYm-CdKbojbBDAftVetBqudMQAmdbolO4YtUs9ztTQx5cQsZw8QgvPRQ2oVvPUgVJxvzrSf47yDX0GYTUz1jGyvtnJbn_pMhUKkU2hlHxv1RtGZpkLCP69OYt58RXopenYwZT-PuaNy_DqK4bNs3tviVnbTHTLfZgZgw8mGiCjXkvyOvYZfIVPZRdNZwctSklgauT83wNhba6ZKbKqEhhbRjvxfdGY7gQGejP-FO7jKUfnCMr79p8_vJrYzhIB5tKqtl3Sgr5XL4YpwLPqfwT0d5llEPnDSF_-MtHA8uMWkYKvjMCnVGtzrsE0LnMZxaxiaFi2SIy2Q5MdOWTU5zoEmcBaR7s9tghNLAnNhKcQFpOoMohYdpgEg8VMKNqmXPEmow-xjla_E1hijvbPQMgh_oQMW1o-4CRbPyIVScA0IApj3--LxJSaAm-y10NZzrMwiqe31FoAyC_zQ12wspAowmUnMYwevwGWx69xcfetuo6ZfbQlVuxIiwSf7q-ntQDjNr1MJ93IweDt_l1u2VYB_VCuH_HE43_ba_TonR7RXL8mSNVjH_eWna7t7Rn42_xDkyMUbZHUcvWFDZSp1j4Oikv9x6-1MltJRdmfb208LH9ma1cS-rq7QH63V1rRh8MZ2b1BP5tOA3msfwxGn4vuSWuXRgPgX0sGr8"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Postman-Token",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"enabled\": true,\r\n\"default\": true,\r\n\"code\": \"AMS\",\r\n\"name\": \"Ankh-Morpork dollarro\",\r\n\"symbol\": \"AM$\",\r\n\"decimal_places\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies/AMS"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete AMS Currency",
+					"id": "340a2b6d-8d6c-4122-bc85-2af72cef6cd4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6ImViMjU2N2JiNmUyZWQzMGJhZDgyN2RmYzdmYTNhYjY1OTFlODQ1MjMyNGE1NmM1NmEzYzFlMTdhMzgyZmEyNDM0Njg4ZTg4MzJjYjdlYzRkIiwiaWF0IjoxNjY5NTU5NjY5LjMwNTM1MywibmJmIjoxNjY5NTU5NjY5LjMwNTM1OCwiZXhwIjoxNzAxMDk1NjY5LjI5MzAxMSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.bBLJt10oYm-CdKbojbBDAftVetBqudMQAmdbolO4YtUs9ztTQx5cQsZw8QgvPRQ2oVvPUgVJxvzrSf47yDX0GYTUz1jGyvtnJbn_pMhUKkU2hlHxv1RtGZpkLCP69OYt58RXopenYwZT-PuaNy_DqK4bNs3tviVnbTHTLfZgZgw8mGiCjXkvyOvYZfIVPZRdNZwctSklgauT83wNhba6ZKbKqEhhbRjvxfdGY7gQGejP-FO7jKUfnCMr79p8_vJrYzhIB5tKqtl3Sgr5XL4YpwLPqfwT0d5llEPnDSF_-MtHA8uMWkYKvjMCnVGtzrsE0LnMZxaxiaFi2SIy2Q5MdOWTU5zoEmcBaR7s9tghNLAnNhKcQFpOoMohYdpgEg8VMKNqmXPEmow-xjla_E1hijvbPQMgh_oQMW1o-4CRbPyIVScA0IApj3--LxJSaAm-y10NZzrMwiqe31FoAyC_zQ12wspAowmUnMYwevwGWx69xcfetuo6ZfbQlVuxIiwSf7q-ntQDjNr1MJ93IweDt_l1u2VYB_VCuH_HE43_ba_TonR7RXL8mSNVjH_eWna7t7Rn42_xDkyMUbZHUcvWFDZSp1j4Oikv9x6-1MltJRdmfb208LH9ma1cS-rq7QH63V1rRh8MZ2b1BP5tOA3msfwxGn4vuSWuXRgPgX0sGr8"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Postman-Token",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"enabled\": true,\r\n\"default\": true,\r\n\"code\": \"AMS\",\r\n\"name\": \"Ankh-Morpork dollarro\",\r\n\"symbol\": \"AM$\",\r\n\"decimal_places\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies/AMS"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Currencies",
+					"id": "a9dfa553-db50-4e01-a401-dbd470d28053",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6IjExNDliZTEyZTIzN2QzNTlkYTE3ZTI1YWU2ZWMwMmVkMmFjYTk4MTZhMzdhZTlmZWRmZmVkMTk0ZmM5MWM3MGNiZTM1ODlhODU3ZjZkYTJlIiwiaWF0IjoxNjY5NTU1NzIyLjY1ODI3MSwibmJmIjoxNjY5NTU1NzIyLjY1ODI3NSwiZXhwIjoxNzAxMDkxNzIyLjY0ODM1NSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.j0Id9SF9gVN8r2YeQ6sAhhqeBuaXg6BIiMwMO9FK3-jdHTAcuJQ7uCTDPi9Na8iupac4uOjR0tu-MlsCIyXqfWD2rU0d3EySaG4rA35VJ0g2lHqrcrwW5GL5CFWDFZv-_U3IX-3LBuGs0nNqiij_9n5zP2OoHnLCKZ0uIjwZvj9-AUzDoGx-4zNOvQpv7RMjvvxfgLWIkzhokrXMBxgScA6vAswwlCThF5JbfTXeKftfQhF2mphKfaOY2TY8GdnO3_gsjRzqY3Cy1CfvvikpIwyK9tuuSTQh70jVkgZr-aoRw6yvO4u45jZLDzl0cbQcLFUAxzc42DTFd9K3EazDKRHUwtj6VctSyLV34WNgM2Hcylcg_pWyul2cDFR1j2Mqan3ekTk3dohgYRFdODh56fOBMD3SSHv0fEzQ-jrWjTdLG4eJoAXRCCTBK2gvMg88fXsckmoj6ETvE5-FO0W1AA4uCeoeVrTRoc-coLGr9qGIfoLvgs6zPB_JpeGVn7Jfv9yraMTR9Vyq4ae8IyHqElVtyPwEU4XxKiOlu74JtJKt-P4cDMt61pS42nPcKQDJU0VRPjNoJ4pCoJO8M-ZtSKBWs3byYeKtIBNIxNykZSG07jpy0cLZvfrXZqW4sL8-hi7mhNpjo8zrc1tmVMmNdU9_D1QmvtQ5fZF93rbUYO8"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"enabled\": true,\r\n  \"default\": false,\r\n  \"code\": \"KUB\",\r\n  \"name\": \"Kubiowa dolarowa\",\r\n  \"symbol\": \"JP$\",\r\n  \"decimal_places\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies"
+					},
+					"response": []
+				}
+			],
 			"id": "6d33dbfb-38dd-4fb5-b0c8-09f3f196f3ab"
 		},
 		{
-			"name": "Get Currencies",
-			"id": "2736c213-86f0-41b7-b62b-504761b5c058",
+			"name": "Get all accounts with AMS",
+			"id": "af7babfe-1607-4038-806a-58feda74335d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6ImViMjU2N2JiNmUyZWQzMGJhZDgyN2RmYzdmYTNhYjY1OTFlODQ1MjMyNGE1NmM1NmEzYzFlMTdhMzgyZmEyNDM0Njg4ZTg4MzJjYjdlYzRkIiwiaWF0IjoxNjY5NTU5NjY5LjMwNTM1MywibmJmIjoxNjY5NTU5NjY5LjMwNTM1OCwiZXhwIjoxNzAxMDk1NjY5LjI5MzAxMSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.bBLJt10oYm-CdKbojbBDAftVetBqudMQAmdbolO4YtUs9ztTQx5cQsZw8QgvPRQ2oVvPUgVJxvzrSf47yDX0GYTUz1jGyvtnJbn_pMhUKkU2hlHxv1RtGZpkLCP69OYt58RXopenYwZT-PuaNy_DqK4bNs3tviVnbTHTLfZgZgw8mGiCjXkvyOvYZfIVPZRdNZwctSklgauT83wNhba6ZKbKqEhhbRjvxfdGY7gQGejP-FO7jKUfnCMr79p8_vJrYzhIB5tKqtl3Sgr5XL4YpwLPqfwT0d5llEPnDSF_-MtHA8uMWkYKvjMCnVGtzrsE0LnMZxaxiaFi2SIy2Q5MdOWTU5zoEmcBaR7s9tghNLAnNhKcQFpOoMohYdpgEg8VMKNqmXPEmow-xjla_E1hijvbPQMgh_oQMW1o-4CRbPyIVScA0IApj3--LxJSaAm-y10NZzrMwiqe31FoAyC_zQ12wspAowmUnMYwevwGWx69xcfetuo6ZfbQlVuxIiwSf7q-ntQDjNr1MJ93IweDt_l1u2VYB_VCuH_HE43_ba_TonR7RXL8mSNVjH_eWna7t7Rn42_xDkyMUbZHUcvWFDZSp1j4Oikv9x6-1MltJRdmfb208LH9ma1cS-rq7QH63V1rRh8MZ2b1BP5tOA3msfwxGn4vuSWuXRgPgX0sGr8"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Postman-Token",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"enabled\": false,\r\n\"default\": true,\r\n\"code\": \"AMS\",\r\n\"name\": \"Nowa moja piękna twarzyczka\",\r\n\"symbol\": \"AM$\",\r\n\"decimal_places\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies/AMS/accounts"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single bill",
+			"id": "767e6c66-9821-4219-bdd0-b350b0969185",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -172,137 +369,8 @@
 						}
 					]
 				},
-				"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies"
-			},
-			"response": []
-		},
-		{
-			"name": "Put AMS Currency",
-			"id": "14ec3384-d19e-4fe7-a41f-9605ce0b158e",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6ImViMjU2N2JiNmUyZWQzMGJhZDgyN2RmYzdmYTNhYjY1OTFlODQ1MjMyNGE1NmM1NmEzYzFlMTdhMzgyZmEyNDM0Njg4ZTg4MzJjYjdlYzRkIiwiaWF0IjoxNjY5NTU5NjY5LjMwNTM1MywibmJmIjoxNjY5NTU5NjY5LjMwNTM1OCwiZXhwIjoxNzAxMDk1NjY5LjI5MzAxMSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.bBLJt10oYm-CdKbojbBDAftVetBqudMQAmdbolO4YtUs9ztTQx5cQsZw8QgvPRQ2oVvPUgVJxvzrSf47yDX0GYTUz1jGyvtnJbn_pMhUKkU2hlHxv1RtGZpkLCP69OYt58RXopenYwZT-PuaNy_DqK4bNs3tviVnbTHTLfZgZgw8mGiCjXkvyOvYZfIVPZRdNZwctSklgauT83wNhba6ZKbKqEhhbRjvxfdGY7gQGejP-FO7jKUfnCMr79p8_vJrYzhIB5tKqtl3Sgr5XL4YpwLPqfwT0d5llEPnDSF_-MtHA8uMWkYKvjMCnVGtzrsE0LnMZxaxiaFi2SIy2Q5MdOWTU5zoEmcBaR7s9tghNLAnNhKcQFpOoMohYdpgEg8VMKNqmXPEmow-xjla_E1hijvbPQMgh_oQMW1o-4CRbPyIVScA0IApj3--LxJSaAm-y10NZzrMwiqe31FoAyC_zQ12wspAowmUnMYwevwGWx69xcfetuo6ZfbQlVuxIiwSf7q-ntQDjNr1MJ93IweDt_l1u2VYB_VCuH_HE43_ba_TonR7RXL8mSNVjH_eWna7t7Rn42_xDkyMUbZHUcvWFDZSp1j4Oikv9x6-1MltJRdmfb208LH9ma1cS-rq7QH63V1rRh8MZ2b1BP5tOA3msfwxGn4vuSWuXRgPgX0sGr8"
-					}
-				},
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Postman-Token",
-						"value": "",
-						"type": "default"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\"enabled\": true,\r\n\"default\": true,\r\n\"code\": \"AMS\",\r\n\"name\": \"Ankh-Morpork dollarro\",\r\n\"symbol\": \"AM$\",\r\n\"decimal_places\": 8\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies/AMS"
-			},
-			"response": []
-		},
-		{
-			"name": "Delete AMS Currency",
-			"id": "340a2b6d-8d6c-4122-bc85-2af72cef6cd4",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6ImViMjU2N2JiNmUyZWQzMGJhZDgyN2RmYzdmYTNhYjY1OTFlODQ1MjMyNGE1NmM1NmEzYzFlMTdhMzgyZmEyNDM0Njg4ZTg4MzJjYjdlYzRkIiwiaWF0IjoxNjY5NTU5NjY5LjMwNTM1MywibmJmIjoxNjY5NTU5NjY5LjMwNTM1OCwiZXhwIjoxNzAxMDk1NjY5LjI5MzAxMSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.bBLJt10oYm-CdKbojbBDAftVetBqudMQAmdbolO4YtUs9ztTQx5cQsZw8QgvPRQ2oVvPUgVJxvzrSf47yDX0GYTUz1jGyvtnJbn_pMhUKkU2hlHxv1RtGZpkLCP69OYt58RXopenYwZT-PuaNy_DqK4bNs3tviVnbTHTLfZgZgw8mGiCjXkvyOvYZfIVPZRdNZwctSklgauT83wNhba6ZKbKqEhhbRjvxfdGY7gQGejP-FO7jKUfnCMr79p8_vJrYzhIB5tKqtl3Sgr5XL4YpwLPqfwT0d5llEPnDSF_-MtHA8uMWkYKvjMCnVGtzrsE0LnMZxaxiaFi2SIy2Q5MdOWTU5zoEmcBaR7s9tghNLAnNhKcQFpOoMohYdpgEg8VMKNqmXPEmow-xjla_E1hijvbPQMgh_oQMW1o-4CRbPyIVScA0IApj3--LxJSaAm-y10NZzrMwiqe31FoAyC_zQ12wspAowmUnMYwevwGWx69xcfetuo6ZfbQlVuxIiwSf7q-ntQDjNr1MJ93IweDt_l1u2VYB_VCuH_HE43_ba_TonR7RXL8mSNVjH_eWna7t7Rn42_xDkyMUbZHUcvWFDZSp1j4Oikv9x6-1MltJRdmfb208LH9ma1cS-rq7QH63V1rRh8MZ2b1BP5tOA3msfwxGn4vuSWuXRgPgX0sGr8"
-					}
-				},
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Postman-Token",
-						"value": "",
-						"type": "default"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\"enabled\": true,\r\n\"default\": true,\r\n\"code\": \"AMS\",\r\n\"name\": \"Ankh-Morpork dollarro\",\r\n\"symbol\": \"AM$\",\r\n\"decimal_places\": 8\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies/AMS"
-			},
-			"response": []
-		},
-		{
-			"name": "Get all accounts with AMS",
-			"id": "af7babfe-1607-4038-806a-58feda74335d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6ImViMjU2N2JiNmUyZWQzMGJhZDgyN2RmYzdmYTNhYjY1OTFlODQ1MjMyNGE1NmM1NmEzYzFlMTdhMzgyZmEyNDM0Njg4ZTg4MzJjYjdlYzRkIiwiaWF0IjoxNjY5NTU5NjY5LjMwNTM1MywibmJmIjoxNjY5NTU5NjY5LjMwNTM1OCwiZXhwIjoxNzAxMDk1NjY5LjI5MzAxMSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.bBLJt10oYm-CdKbojbBDAftVetBqudMQAmdbolO4YtUs9ztTQx5cQsZw8QgvPRQ2oVvPUgVJxvzrSf47yDX0GYTUz1jGyvtnJbn_pMhUKkU2hlHxv1RtGZpkLCP69OYt58RXopenYwZT-PuaNy_DqK4bNs3tviVnbTHTLfZgZgw8mGiCjXkvyOvYZfIVPZRdNZwctSklgauT83wNhba6ZKbKqEhhbRjvxfdGY7gQGejP-FO7jKUfnCMr79p8_vJrYzhIB5tKqtl3Sgr5XL4YpwLPqfwT0d5llEPnDSF_-MtHA8uMWkYKvjMCnVGtzrsE0LnMZxaxiaFi2SIy2Q5MdOWTU5zoEmcBaR7s9tghNLAnNhKcQFpOoMohYdpgEg8VMKNqmXPEmow-xjla_E1hijvbPQMgh_oQMW1o-4CRbPyIVScA0IApj3--LxJSaAm-y10NZzrMwiqe31FoAyC_zQ12wspAowmUnMYwevwGWx69xcfetuo6ZfbQlVuxIiwSf7q-ntQDjNr1MJ93IweDt_l1u2VYB_VCuH_HE43_ba_TonR7RXL8mSNVjH_eWna7t7Rn42_xDkyMUbZHUcvWFDZSp1j4Oikv9x6-1MltJRdmfb208LH9ma1cS-rq7QH63V1rRh8MZ2b1BP5tOA3msfwxGn4vuSWuXRgPgX0sGr8"
-					}
-				},
-				"method": "GET",
-				"header": [
-					{
-						"key": "Postman-Token",
-						"value": "",
-						"type": "default"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\"enabled\": false,\r\n\"default\": true,\r\n\"code\": \"AMS\",\r\n\"name\": \"Nowa moja piękna twarzyczka\",\r\n\"symbol\": \"AM$\",\r\n\"decimal_places\": 8\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies/AMS/accounts"
-			},
-			"response": []
-		},
-		{
-			"name": "Post Currencies",
-			"id": "a9dfa553-db50-4e01-a401-dbd470d28053",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyMyIsImp0aSI6IjExNDliZTEyZTIzN2QzNTlkYTE3ZTI1YWU2ZWMwMmVkMmFjYTk4MTZhMzdhZTlmZWRmZmVkMTk0ZmM5MWM3MGNiZTM1ODlhODU3ZjZkYTJlIiwiaWF0IjoxNjY5NTU1NzIyLjY1ODI3MSwibmJmIjoxNjY5NTU1NzIyLjY1ODI3NSwiZXhwIjoxNzAxMDkxNzIyLjY0ODM1NSwic3ViIjoiNDkyIiwic2NvcGVzIjpbXX0.j0Id9SF9gVN8r2YeQ6sAhhqeBuaXg6BIiMwMO9FK3-jdHTAcuJQ7uCTDPi9Na8iupac4uOjR0tu-MlsCIyXqfWD2rU0d3EySaG4rA35VJ0g2lHqrcrwW5GL5CFWDFZv-_U3IX-3LBuGs0nNqiij_9n5zP2OoHnLCKZ0uIjwZvj9-AUzDoGx-4zNOvQpv7RMjvvxfgLWIkzhokrXMBxgScA6vAswwlCThF5JbfTXeKftfQhF2mphKfaOY2TY8GdnO3_gsjRzqY3Cy1CfvvikpIwyK9tuuSTQh70jVkgZr-aoRw6yvO4u45jZLDzl0cbQcLFUAxzc42DTFd9K3EazDKRHUwtj6VctSyLV34WNgM2Hcylcg_pWyul2cDFR1j2Mqan3ekTk3dohgYRFdODh56fOBMD3SSHv0fEzQ-jrWjTdLG4eJoAXRCCTBK2gvMg88fXsckmoj6ETvE5-FO0W1AA4uCeoeVrTRoc-coLGr9qGIfoLvgs6zPB_JpeGVn7Jfv9yraMTR9Vyq4ae8IyHqElVtyPwEU4XxKiOlu74JtJKt-P4cDMt61pS42nPcKQDJU0VRPjNoJ4pCoJO8M-ZtSKBWs3byYeKtIBNIxNykZSG07jpy0cLZvfrXZqW4sL8-hi7mhNpjo8zrc1tmVMmNdU9_D1QmvtQ5fZF93rbUYO8"
-					}
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"enabled\": true,\r\n  \"default\": false,\r\n  \"code\": \"KUB\",\r\n  \"name\": \"Kubiowa dolarowa\",\r\n  \"symbol\": \"JP$\",\r\n  \"decimal_places\": 2\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "https://fintech-testlab.coderslab.pl/api/v1/currencies"
+				"url": "https://fintech-testlab.coderslab.pl/api/v1/bills/420",
+				"description": "Bill \"ewa\", id number:420"
 			},
 			"response": []
 		}
